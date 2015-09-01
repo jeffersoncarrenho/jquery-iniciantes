@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 02 A</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        var jq = jQuery.noConflict();//usado para evitar conflitos com outros scripts
+        jq(document).ready(function(){
+            //aqui vão as funções do jquery
+            //a variável jq é usada no lugar do $ para evitar conflitos
+            jq("button").click(function(){
+               jq("p").hide();
+            });
+        });
+        
+        /*
+        $(seletor).acao()
+        $("p") seleciona todos os elementos com a tag p
+        $("p.teste") seleciona todos os elementos com a tag p e class teste
+        $("p#teste") seleciona todos os elementos com a tag p e id teste
+        $("[href]") seleciona todos os elementos <a> com o atributo href
+        $("[href='#']") seleciona todos os elementos <a> com o atributo href e valor igual a #
+        $("[href!='#']") seleciona todos os elementos <a> com o atributo href e valor diferente de #
+        $("[href$='.jpg']") seleciona todos os elementos <a> com o atributo href que levam a uma imagem .jpg
+        
+        $(seletor).ready(function) executado depois de toda a página carregada
+        $(seletor).click(function) executado quando o elemento é clicado
+        $(seletor).dblclick(function) executado no double click do elemento
+        $(seletor).focus(function) executado quando o elemento de formulários recebe o foco
+        $(seletor).mouseover(function) executado quando se passa o mouse
+        $(seletor).change(function) por exemplo quando se muda de opção em um combo box
+        $(seletor).keypress(function) quando pressionada uma tecla
+        $(seletor).submit(function) quando o formulário é submetido
+        $(seletor).resize(function) quando o elemento muda de tamanho
+        
+        
+        */
+    </script>
+</head>
+<body>
+    <h2>Isso é um título</h2>
+    <p>Isso é um parágrafo</p>
+    <p>Isso é outro parágrafo</p>
+    <button>Clique aqui</button>
+    
+</body>
+</html>

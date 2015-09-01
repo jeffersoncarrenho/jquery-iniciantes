@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 05 B</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+            
+            $("#html").click(function(){
+                $("p").html("Curso de jQuery");
+            });
+            
+            $("#append").click(function(){
+                $("p").append("Curso de jQuery");
+            });
+            
+            $("#prepend").click(function(){
+                $("p").prepend("Curso de jQuery - ");
+            });
+            
+            $("#after").click(function(){
+                $("p").after("Curso de jQuery");
+            });
+            
+            $("#before").click(function(){
+                $("p").before("Curso de jQuery");
+            });
+            
+        });
+            
+    </script>
+</head>
+<body>
+    <p>Isso é um parágrafo</p>
+    <p>Isso é outro parágrafo</p>
+    <button id="html">HTML</button>
+    <button id="append">Append</button>
+    <button id="prepend">Prepend</button>
+    <button id="after">After</button>
+    <button id="before">Before</button>
+    
+</body>
+</html>

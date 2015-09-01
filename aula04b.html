@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 04 A</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#fadeout").click(function(){
+                $("div").fadeOut(4000);//Vai Sumindo
+            });
+            $("#fadein").click(function(){
+                $("div").fadeIn(4000);//Vai Sumindo
+            });
+        });
+    </script>
+    
+    <style type="text/css">
+        div{background: yellow;width: 300px;height: 300px;}
+    </style>
+</head>
+<body>
+    <h2>Aula 04 - Efeitos</h2>
+    <div></div>
+    <button id="fadeout">Fade Out</button>
+    <button id="fadein">Fade In</button>
+    
+    
+    
+</body>
+</html>

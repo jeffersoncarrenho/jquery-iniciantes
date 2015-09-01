@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 05 B</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+            
+            $("#css").click(function(){
+                $("p").css({"background-color":"#ff6600","color":"#ffffff"});
+            });
+            
+            $("#height").click(function(){
+                $("#div1").height("200px");
+            });
+            
+            $("#width").click(function(){
+                $("#div1").width("200px");
+            });
+        });
+            
+    </script>
+    
+    <style>
+        #div1{height: 100px;width: 100px;background-color: #ff6600;}
+    </style>
+    
+</head>
+<body>
+    <p>Isso é um parágrafo</p>
+    <p>Isso é outro parágrafo</p>
+    <div id="div1"></div>
+    <button id="css">CSS</button>
+    <button id="height">Height</button>
+    <button id="width">Width</button>
+      
+       
+</body>
+</html>

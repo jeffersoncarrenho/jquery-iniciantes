@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 04 A</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("div").animate({left:"100px"}, "slow");
+                $("div").animate({fontSize:"50px"}, "slow");
+            });
+        });
+    </script>
+    
+    <style type="text/css">
+        div{background: #98bf21;width: 200px;height: 100px;position: relative;}
+    </style>
+</head>
+<body>
+    <h2>Aula 04 - Efeitos</h2>
+    <button>Iniciar Animação</button><br><br>
+    <div>Olá</div>
+    
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 01 A</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+            
+            $("button").click(function(){
+               $("p").hide(1000, function(){
+                    alert("Agora o parágrafo está oculto");
+               });
+            });
+        });
+            
+    </script>
+</head>
+<body>
+    <p>Isso é outro parágrafo</p>
+    <button>Ocultar</button>
+    
+</body>
+</html>

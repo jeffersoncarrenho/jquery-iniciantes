@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 05 B</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+            
+            $("button").click(function(){
+                $("#div1").load('teste.php');
+            });
+            
+        });
+            
+    </script>
+    
+    <style>
+        #div1{height: 100px;width: 300px;background-color: #f4f4f4;}
+    </style>
+    
+</head>
+<body>
+    <div id="div1"></div>
+    <button>Carregar</button>
+    
+</body>
+</html>
